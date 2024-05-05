@@ -35,12 +35,12 @@ Click on `Browse files` and choose an image from your computer to upload.
 Once uploaded, the model will perform inference and the output will be displayed.  
 
 ## Output
-<img src ='misc/Flask_home1.png' width = 700>
-<img src ='misc/Flask_home2.png' width = 700>
+<img src ='/app/misc/Flask_home1.png' width = 700>
+<img src ='/app/misc/Flask_home2.png' width = 700>
 
-<img src ='misc/sample_home_page.png' width = 700>  
+<img src ='/app/misc/sample_home_page.png' width = 700>  
 
-<img src ='misc/sample_output.png' width = 700>
+<img src ='/app/misc/sample_output.png' width = 700>
 
 
 ## Notes
