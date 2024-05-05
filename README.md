@@ -35,6 +35,11 @@ Click on `Browse files` and choose an image from your computer to upload.
 Once uploaded, the model will perform inference and the output will be displayed.  
 
 ## Output
+
+  <video width="320" height="240" controls>
+  <source src="YouCut_20240505_234457700.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 <img src ='/app/misc/Flask_home1.png' width = 700>
 <img src ='/app/misc/Flask_home2.png' width = 700>
 
