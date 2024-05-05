@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Classifier</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #aebab9;
+            padding: 20px;
+        }
+        h1 {
+            color: #333333;
+        }
+        .container {
+            margin-top: 50px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            margin-left: 500px;
+            margin-right: 500px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .btn {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        .image-container {
+            display: none;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .image-container img {
+            max-width: 100%;
+            max-height: 400px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <script>
+        function showPreview(event) {
+            var image = document.getElementById('uploaded-image');
+            var input = event.target;
+
+            var reader = new FileReader();
+            reader.onload = function() {
+                image.src = reader.result;
+                document.getElementById('image-container').style.display = 'flex';
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    </script>
+</head>
+<body>
+    <h1>Flower Classifier</h1>
+    <div class="container">
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*" onchange="showPreview(event)" required>
+            <button class="btn" type="submit">Predict</button>
+        </form>
+        <div class="image-container" id="image-container">
+            <img src="" alt="Uploaded Image" id="uploaded-image">
+        </div>
+    </div>
+</body>
+</html>
