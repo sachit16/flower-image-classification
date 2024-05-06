@@ -1,5 +1,5 @@
 # Image-Classification-Streamlit-TensorFlow
-A basic web-app for image classification using Streamlit and TensorFlow.
+A basic web-app for image classification using Streamlit,Flask and TensorFlow.
 
 It classifies the given image of a flower into one of the following five categories :-  
 
@@ -19,7 +19,17 @@ It classifies the given image of a flower into one of the following five categor
 14. sunflower
 15. tulip
 16. water_lily
+## Architecture :
+<img src ='Densenet121.png' width = 700>
 
+## Links:
+### 1.Dataset Link:-
+* For 5 Flower Classes:-
+** https://www.kaggle.com/datasets/imsparsh/flowers-dataset
+* For 16 Flower Classes:-
+** https://www.kaggle.com/datasets/l3llff/flowers
+### 2.Model File:-
+* https://drive.google.com/file/d/1e7QV6NQ9gBPTAp-gByaNH2RX34QT9Edt/view?usp=sharing
 ## Commands
 
 To run the app locally, use the following command :-  
@@ -35,11 +45,8 @@ Click on `Browse files` and choose an image from your computer to upload.
 Once uploaded, the model will perform inference and the output will be displayed.  
 
 ## Output
+![Video](https://github.com/sachit16/flower-image-classification/blob/main/YouCut_20240505_234457700.mp4)
 
-  <video width="320" height="240" controls>
-  <source src="YouCut_20240505_234457700.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
 <img src ='/app/misc/Flask_home1.png' width = 700>
 <img src ='/app/misc/Flask_home2.png' width = 700>
 
